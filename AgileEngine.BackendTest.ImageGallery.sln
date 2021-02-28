@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgileEngine.BackendTest.ImageGallery.API", "AgileEngine.BackendTest.ImageGallery.API\AgileEngine.BackendTest.ImageGallery.API.csproj", "{C1BFC3AF-D6D2-4CC8-AC61-1274FBE234DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1BFC3AF-D6D2-4CC8-AC61-1274FBE234DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1BFC3AF-D6D2-4CC8-AC61-1274FBE234DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1BFC3AF-D6D2-4CC8-AC61-1274FBE234DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1BFC3AF-D6D2-4CC8-AC61-1274FBE234DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {30F7D0CD-867A-42F9-BCC7-A83CFA26AEE6}
+	EndGlobalSection
+EndGlobal
