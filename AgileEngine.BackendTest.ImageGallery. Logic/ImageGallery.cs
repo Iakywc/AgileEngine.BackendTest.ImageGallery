@@ -6,7 +6,7 @@ using AgileEngine.BackendTest.ImageGallery.Logic.Services;
 
 namespace AgileEngine.BackendTest.ImageGallery.Logic
 {
-    public class ImageGallery
+    public class ImageGallery : IImageGallery
     {
         private readonly IImageHttpClientService _imageClient;
         private readonly ITokenService _tokenService;
