@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgileEngine.BackendTest.ImageGallery.API", "AgileEngine.BackendTest.ImageGallery.API\AgileEngine.BackendTest.ImageGallery.API.csproj", "{C1BFC3AF-D6D2-4CC8-AC61-1274FBE234DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgileEngine.BackendTest.ImageGallery.Logic", "AgileEngine.BackendTest.ImageGallery. Logic\AgileEngine.BackendTest.ImageGallery.Logic.csproj", "{DFC5122E-78C8-4049-BB70-EB27E59138C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgileEngine.BackendTest.ImageGallery.Persistance", "AgileEngine.BackendTest.ImageGallery.Persistance\AgileEngine.BackendTest.ImageGallery.Persistance.csproj", "{87163045-6B0D-4C72-983C-69A7D9BD0560}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{C1BFC3AF-D6D2-4CC8-AC61-1274FBE234DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1BFC3AF-D6D2-4CC8-AC61-1274FBE234DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1BFC3AF-D6D2-4CC8-AC61-1274FBE234DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFC5122E-78C8-4049-BB70-EB27E59138C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFC5122E-78C8-4049-BB70-EB27E59138C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFC5122E-78C8-4049-BB70-EB27E59138C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFC5122E-78C8-4049-BB70-EB27E59138C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87163045-6B0D-4C72-983C-69A7D9BD0560}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87163045-6B0D-4C72-983C-69A7D9BD0560}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87163045-6B0D-4C72-983C-69A7D9BD0560}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87163045-6B0D-4C72-983C-69A7D9BD0560}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
