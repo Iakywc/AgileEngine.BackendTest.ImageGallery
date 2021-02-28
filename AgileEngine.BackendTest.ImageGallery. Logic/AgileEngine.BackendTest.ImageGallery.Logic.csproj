@@ -5,4 +5,12 @@
     <RootNamespace>AgileEngine.BackendTest.ImageGallery.Logic</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="HttpClients\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
 </Project>
