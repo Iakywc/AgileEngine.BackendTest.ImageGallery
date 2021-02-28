@@ -9,35 +9,34 @@ using Newtonsoft.Json;
 
 namespace AgileEngine.BackendTest.ImageGallery.Logic.Services
 {
-    public class TokenHttpClientService
+    public class TokenHttpClientService : ITokenHttpClientService
     {
-        public readonly IConfiguration _configuration;
+        private readonly IConfiguration _configuration;
 
         public TokenHttpClientService(IConfiguration configuration)
         {
             _configuration = configuration;
         }
-        public async Task<GalleryToken> PostToken(string apiKey)
+        public async Task<GalleryToken> PostTokenRequest(string apiKey)
         {
             try
             {
-                using (var client = new HttpClient())
-                {
-                    var Content = new StringContent(apiKey, Encoding.UTF8, "application/json");
-                    var baseUrl = new Uri(_configuration.GetSection("TokenInfo:BaseUrl").Value);
-                    var url = "auth";
+                using var client = new HttpClient();
+                var content = new StringContent(apiKey, Encoding.UTF8, "application/json");
+                var baseUrl = new Uri(_configuration.GetSection("TokenInfo:BaseUrl").Value);
+                var url = "auth";
 
-                    client.BaseAddress = baseUrl;
-                    client.DefaultRequestHeaders.Accept.Add(
-                        new MediaTypeWithQualityHeaderValue("application/json"));
+                client.BaseAddress = baseUrl;
+                client.DefaultRequestHeaders.Accept.Add(
+                    new MediaTypeWithQualityHeaderValue("application/json"));
 
-                    
-                    HttpResponseMessage response = await client.PostAsync(url, Content);
-                    response.EnsureSuccessStatusCode();
-                    var result = await response.Content.ReadAsStringAsync();
 
-                    return JsonConvert.DeserializeObject<GalleryToken>(result);
-                }
+                HttpResponseMessage response = await client.PostAsync(url, content);
+                response.EnsureSuccessStatusCode();
+
+                var result = await response.Content.ReadAsStringAsync();
+
+                return JsonConvert.DeserializeObject<GalleryToken>(result);
             }
             catch (Exception e)
             {
